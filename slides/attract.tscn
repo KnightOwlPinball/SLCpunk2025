@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://besn58jwvay61"]
+
+[ext_resource type="Script" uid="uid://w7oydsnli71j" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_r1mnt"]
+[ext_resource type="Script" uid="uid://g3kmaimwib65" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="2_m2s46"]
+
+[node name="Attract" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_r1mnt")
+metadata/_custom_type_script = "uid://w7oydsnli71j"
+
+[node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 0
+offset_right = 1541.0
+offset_bottom = 614.0
+script = ExtResource("2_m2s46")
+metadata/_custom_type_script = "uid://g3kmaimwib65"
