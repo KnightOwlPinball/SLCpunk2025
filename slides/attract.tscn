@@ -13,6 +13,7 @@ script = ExtResource("1_r1mnt")
 metadata/_custom_type_script = "uid://w7oydsnli71j"
 
 [node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
 offset_left = -7.0
 offset_top = -4.0
 offset_right = 1544.0
@@ -33,6 +34,7 @@ scale = Vector2(1.9303, 1.9303)
 texture = ExtResource("3_twbla")
 
 [node name="mpf_logo" type="ColorRect" parent="MPFCarousel"]
+layout_mode = 0
 offset_left = -2.0
 offset_top = 1.0
 offset_right = 1542.0
