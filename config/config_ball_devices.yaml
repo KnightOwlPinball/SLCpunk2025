@@ -1,0 +1,28 @@
+#config_version=6
+
+ball_devices:
+    bd_trough:
+        ball_switches: s_trough_ball1_opto, s_trough_ball2, s_trough_ball3, s_trough_ball4, s_trough_ball5, s_trough_ball6, s_trough_ball_jam_opto
+        eject_coil: c_trough_eject
+        tags: trough, home, drain
+        jam_switch: s_trough_ball_jam_opto
+        eject_coil_jam_pulse: 15ms
+        eject_targets: bd_plunger
+        eject_timeouts: 3s
+    bd_plunger:
+        ball_switches: s_shooter_lane
+        mechanical_eject: true
+        eject_coil: c_auto_launch
+        eject_timeouts: 2s
+    bd_captive_ball:
+        ball_switches: s_captive_ball_lock_opto
+        eject_coil: c_captive_ball_eject
+        eject_timeouts: 1s
+    bd_ball_lock:
+        ball_switches: s_ball1_lock_opto, s_ball2_lock_opto, s_ball3_lock_opto
+        eject_coil: c_ball_lock_post
+        eject_timeouts: 3s
+    bd_subway_eject:
+        ball_switches: s_subway_eject
+        eject_coil: c_subway_eject
+        eject_timeouts: 2s 

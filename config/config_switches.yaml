@@ -1,0 +1,130 @@
+#config_version=6
+
+switches:
+    s_left_flipper:
+        number: A3-B1-7
+        tags: left_flipper
+    s_right_flipper:
+        number: A3-B1-6
+        tags: right_flipper
+    s_left_flipper_eos:
+        number: A1-B1-7
+        type: NC
+        tags: left_flipper_eos
+    s_right_flipper_eos:
+        number: A1-B1-2
+        type: NC
+        tags: right_flipper_eos
+    s_shooter_lane:
+        number: A1-B0-0
+    s_right_outlane:
+        number: A1-B0-1
+        tags: playfield_active
+    s_right_inlane:
+        number: A1-B0-2
+        tags: playfield_active
+    s_trough_ball2:
+        number: A1-B0-3
+    s_trough_ball3:
+        number: A1-B0-4
+    s_trough_ball4:
+        number: A1-B0-5
+    s_trough_ball5:
+        number: A1-B0-6
+    s_trough_ball6:
+        number: A1-B0-7
+    s_center_stand_up:
+        number: A1-B1-0
+        tags: playfield_active
+    s_subway_eject:
+        number: A1-B1-1
+    s_right_sling:
+        number: A1-B1-3
+    s_left_sling:
+        number: A1-B1-4
+    s_left_inlane:
+        number: A1-B1-5
+        tags: playfield_active
+    s_left_outlane:
+        number: A1-B1-6
+        tags: playfield_active
+    s_subway_drop_target:
+        number: A0-B0-0
+    s_rollover_S:
+        number: A0-B0-1
+        tags: playfield_active
+    s_rollover_L:
+        number: A0-B0-2
+        tags: playfield_active
+    s_rollover_C:
+        number: A0-B0-3
+        tags: playfield_active
+    s_left_pop:
+        number: A0-B0-4
+    s_center_pop:
+        number: A0-B0-5
+    s_right_pop:
+        number: A0-B0-6
+    s_right_orbit_spinner:
+        number: A0-B0-7
+        tags: playfield_active
+    s_captive_ball_lock_opto:
+        number: A0-B1-0
+        type: NC
+    s_trough_ball1_opto:
+        number: A0-B1-1
+        type: NC
+    s_trough_ball_jam_opto:
+        number: A0-B1-2
+        type: NC
+    s_left_orbit_opto:
+        number: A0-B1-3
+        type: NC
+        tags: playfield_active
+    s_vuk_opto:
+        number: A0-B1-4
+        type: NC
+    s_ball1_lock_opto:
+        number: A0-B1-5
+        type: NC
+    s_ball2_lock_opto:
+        number: A0-B1-6
+        type: NC
+    s_ball3_lock_opto:
+        number: A0-B1-7
+        type: NC
+    s_subway_entrance:
+        number: A3-B0-0
+    s_ramp_is_down:
+        number: A3-B0-1
+    s_center_drop:
+        number: A3-B0-2
+        type: NC
+    s_right_ramp_make:
+        number: A3-B0-3
+        tags: playfield_active
+    s_lower_drop:
+        number: A3-B0-4
+        type: NC
+    s_right_ramp_enter:
+        number: A3-B0-5
+        tags: playfield_active
+    s_left_ramp_make:
+        number: A3-B0-6
+        tags: playfield_active
+    s_upper_drop:
+        number: A3-B0-7
+        type: NC
+    #s_A3B10:
+     #   number: A3-B1-0
+    #s_A3B11:
+     #   number: A3-B1-1
+    #s_A3B12:
+     #   number: A3-B1-2
+    #s_A3B13:
+     #   number: A3-B1-3
+    #s_A3B14:
+     #   number: A3-B1-4
+    s_start_button:
+        number: A3-B1-5
+        tags: start

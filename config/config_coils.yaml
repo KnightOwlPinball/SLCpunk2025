@@ -1,0 +1,64 @@
+#config_version=6
+
+coils:
+    c_three_bank_reset:
+        number: A0-B1-0
+        default_pulse_ms: 50
+    c_left_sling:
+        number: A0-B1-2
+        default_pulse_ms: 20
+    c_ramp_up:
+        number: A0-B1-3
+        default_pulse_ms: 20
+    c_captive_ball_eject:
+        number: A0-B1-4
+        default_pulse_ms: 4
+    c_ramp_down:
+        number: A0-B1-5
+        default_pulse_ms: 15
+    c_ball_lock_post:
+        number: A0-B1-6
+    c_left_pop:
+        number: A0-B1-7
+    c_auto_launch:
+        number: A1-B1-0
+    c_subway_eject:
+        number: A1-B1-1
+        default_pulse_ms: 12
+    c_right_sling:
+        number: A1-B1-2
+        default_pulse_ms: 20
+    c_right_ramp_diverter:
+        number: A1-B1-3
+    c_trough_eject:
+        number: A1-B1-4
+        default_pulse_ms: 20
+    c_right_pop:
+        number: A1-B1-5
+    c_center_pop:
+        number: A1-B1-7
+    c_subway_drop_knockdown:
+        number: A1-B0-7
+    c_subway_drop_reset:
+        number: A1-B0-6
+        default_pulse_ms: 25
+    c_vuk_eject:
+        number: A1-B0-5
+    c_vuk_diverter:
+        number: A1-B0-4
+    c_orbit_up_post:
+        number: A1-B0-3
+        default_pulse_ms: 20
+        default_hold_power: 0.2
+        allow_enable: true
+
+    c_flipper_left:
+        number: A0-B1-1
+        allow_enable: true
+        default_hold_power: 0.125
+        default_pulse_ms: 20
+    c_flipper_right:
+        number: A1-B1-6
+        allow_enable: true
+        default_hold_power: 0.125
+        default_pulse_ms: 20
