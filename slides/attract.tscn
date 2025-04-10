@@ -28,12 +28,86 @@ script = ExtResource("2_f161n")
 carousel_name = "attract"
 metadata/_custom_type_script = "uid://ckxccymjfayjo"
 
+[node name="last_scores_p1" type="Node2D" parent="MPFCarousel"]
+
+[node name="player1_score" type="Label" parent="MPFCarousel/last_scores_p1"]
+offset_left = -362.0
+offset_top = -103.0
+offset_right = 1177.0
+offset_bottom = 522.0
+theme_override_font_sizes/font_size = 80
+text = "1424260"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_twbla")
+variable_type = 2
+variable_name = "player1_score"
+comma_separate = true
+min_digits = 2
+metadata/_custom_type_script = "uid://c2x7osnvtx3tj"
+
+[node name="last_scores_p4" type="Node2D" parent="MPFCarousel"]
+
+[node name="player4_score" type="Label" parent="MPFCarousel/last_scores_p4"]
+offset_left = 324.0
+offset_top = 158.0
+offset_right = 1863.0
+offset_bottom = 783.0
+theme_override_font_sizes/font_size = 80
+text = "1424260"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_twbla")
+variable_type = 2
+variable_name = "player4_score"
+comma_separate = true
+min_digits = 2
+metadata/_custom_type_script = "uid://c2x7osnvtx3tj"
+
+[node name="last_scores_p3" type="Node2D" parent="MPFCarousel"]
+
+[node name="player3_score" type="Label" parent="MPFCarousel/last_scores_p3"]
+offset_left = -360.0
+offset_top = 163.0
+offset_right = 1179.0
+offset_bottom = 788.0
+theme_override_font_sizes/font_size = 80
+text = "1424260"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_twbla")
+variable_type = 2
+variable_name = "player3_score"
+comma_separate = true
+min_digits = 2
+metadata/_custom_type_script = "uid://c2x7osnvtx3tj"
+
+[node name="last_scores_p2" type="Node2D" parent="MPFCarousel"]
+
+[node name="player2_score" type="Label" parent="MPFCarousel/last_scores_p2"]
+offset_left = 339.0
+offset_top = -115.0
+offset_right = 1878.0
+offset_bottom = 510.0
+theme_override_font_sizes/font_size = 80
+text = "1424260"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_twbla")
+variable_type = 2
+variable_name = "player2_score"
+comma_separate = true
+min_digits = 2
+metadata/_custom_type_script = "uid://c2x7osnvtx3tj"
+
 [node name="title" type="Sprite2D" parent="MPFCarousel"]
+visible = false
 position = Vector2(803, 309)
 scale = Vector2(1.9303, 1.9303)
 texture = ExtResource("3_twbla")
 
 [node name="mpf_logo" type="ColorRect" parent="MPFCarousel"]
+visible = false
 layout_mode = 0
 offset_left = -2.0
 offset_top = 1.0
@@ -46,6 +120,7 @@ scale = Vector2(2.82788, 2.82788)
 texture = ExtResource("3_cq3lo")
 
 [node name="credits" type="Label" parent="MPFCarousel"]
+visible = false
 layout_mode = 0
 offset_left = 4.0
 offset_top = 4.0
