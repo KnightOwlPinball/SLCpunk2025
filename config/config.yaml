@@ -14,8 +14,14 @@ config:
 modes:
   - attract
   - base
+  - bumpers
 
 playfields:
   playfield:
     tags: default
     default_source_device: bd_plunger
+
+virtual_platform_start_active_switches:
+  - s_trough_ball1_opto
+  - s_trough_ball2
+  - s_trough_ball3

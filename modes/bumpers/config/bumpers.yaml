@@ -1,0 +1,22 @@
+#config_version=6
+
+mode:
+  start_events: start_mode_bumpers
+  stop_events: stop_mode_bumpers
+  priority: 100
+
+shots:
+  bumper_left:
+    switch: s_left_pop
+  bumper_right:
+    switch: s_right_pop
+  bumper_center:
+    switch: s_center_pop
+
+shot_groups:
+  bumpers:
+    shots: bumper_left, bumper_right, bumper_center
+
+variable_player:
+  bumpers_hit:
+    score: 1500
