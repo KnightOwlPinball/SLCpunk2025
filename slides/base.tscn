@@ -1,9 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://7s4ge4pp6u2"]
+[gd_scene load_steps=10 format=3 uid="uid://7s4ge4pp6u2"]
 
 [ext_resource type="Script" uid="uid://w7oydsnli71j" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_b71wd"]
 [ext_resource type="FontFile" uid="uid://cge0dqddltkgb" path="res://fonts/BrutalDude.ttf" id="2_mixwp"]
 [ext_resource type="Texture2D" uid="uid://jak5xtc3ju4i" path="res://images/streetpunk.png" id="2_myvl5"]
 [ext_resource type="Script" uid="uid://c2x7osnvtx3tj" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_myvl5"]
+[ext_resource type="FontFile" uid="uid://ck82txvfw6wxf" path="res://fonts/Shred.ttf" id="4_20xw8"]
+[ext_resource type="Texture2D" uid="uid://cbh1jnuhtrp45" path="res://images/score_back1.png" id="5_r8cgk"]
+[ext_resource type="Texture2D" uid="uid://em4b4l5iahbs" path="res://images/score_back2.png" id="6_20xw8"]
+[ext_resource type="Texture2D" uid="uid://c2lr6ax42xlyi" path="res://images/score_back3.png" id="7_du778"]
+[ext_resource type="Texture2D" uid="uid://dtmldq740vbvp" path="res://images/score_back4.png" id="8_f5kbb"]
 
 [node name="Base" type="Control"]
 layout_mode = 3
@@ -28,17 +33,148 @@ scale = Vector2(0.38, 0.38)
 texture = ExtResource("2_myvl5")
 centered = false
 
-[node name="player_score" type="Label" parent="ColorRect"]
-layout_mode = 0
-offset_left = 247.0
-offset_top = 500.0
-offset_right = 542.0
-offset_bottom = 590.0
-theme_override_fonts/font = ExtResource("2_mixwp")
-theme_override_font_sizes/font_size = 80
+[node name="player1_score_bg" type="Sprite2D" parent="ColorRect"]
+position = Vector2(228, 559)
+texture = ExtResource("5_r8cgk")
+
+[node name="player_score" type="Label" parent="ColorRect/player1_score_bg"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -222.5
+offset_top = -65.0
+offset_right = -77.5
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_20xw8")
+theme_override_font_sizes/font_size = 50
 text = "1234567"
 script = ExtResource("3_myvl5")
+variable_type = 4
 variable_name = "score"
 comma_separate = true
 min_digits = 2
+max_players = 1
+metadata/_custom_type_script = "uid://c2x7osnvtx3tj"
+
+[node name="player2_score_bg" type="Sprite2D" parent="ColorRect"]
+position = Vector2(586, 556)
+texture = ExtResource("6_20xw8")
+
+[node name="player_score2" type="Label" parent="ColorRect/player2_score_bg"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -222.5
+offset_top = -65.0
+offset_right = -77.5
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_20xw8")
+theme_override_font_sizes/font_size = 50
+text = "1234567"
+script = ExtResource("3_myvl5")
+variable_type = 5
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+min_players = 2
+metadata/_custom_type_script = "uid://c2x7osnvtx3tj"
+
+[node name="player3_score_bg" type="Sprite2D" parent="ColorRect"]
+position = Vector2(964, 545)
+texture = ExtResource("7_du778")
+
+[node name="player_score3" type="Label" parent="ColorRect/player3_score_bg"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -222.5
+offset_top = -65.0
+offset_right = -77.5
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_20xw8")
+theme_override_font_sizes/font_size = 50
+text = "1234567"
+script = ExtResource("3_myvl5")
+variable_type = 6
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+min_players = 3
+metadata/_custom_type_script = "uid://c2x7osnvtx3tj"
+
+[node name="player4_score_bg" type="Sprite2D" parent="ColorRect"]
+position = Vector2(1327, 546)
+texture = ExtResource("8_f5kbb")
+
+[node name="player_score4" type="Label" parent="ColorRect/player4_score_bg"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -222.5
+offset_top = -65.0
+offset_right = -77.5
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_20xw8")
+theme_override_font_sizes/font_size = 50
+text = "1234567"
+script = ExtResource("3_myvl5")
+variable_type = 7
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+min_players = 4
+metadata/_custom_type_script = "uid://c2x7osnvtx3tj"
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 118.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 20
+
+[node name="HFlowContainer" type="HFlowContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 40
+
+[node name="player_number" type="Label" parent="MarginContainer/HFlowContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_mixwp")
+theme_override_font_sizes/font_size = 50
+text = "Player 1"
+script = ExtResource("3_myvl5")
+variable_name = "number"
+template_string = "player %s"
+min_players = 2
+metadata/_custom_type_script = "uid://c2x7osnvtx3tj"
+
+[node name="player_ball" type="Label" parent="MarginContainer/HFlowContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_mixwp")
+theme_override_font_sizes/font_size = 50
+text = "Ball 1"
+script = ExtResource("3_myvl5")
+variable_name = "ball"
+template_string = "Ball %s"
 metadata/_custom_type_script = "uid://c2x7osnvtx3tj"
