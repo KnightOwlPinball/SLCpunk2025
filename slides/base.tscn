@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://7s4ge4pp6u2"]
+[gd_scene load_steps=12 format=3 uid="uid://7s4ge4pp6u2"]
 
 [ext_resource type="Script" uid="uid://w7oydsnli71j" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_b71wd"]
 [ext_resource type="FontFile" uid="uid://cge0dqddltkgb" path="res://fonts/BrutalDude.ttf" id="2_mixwp"]
@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://em4b4l5iahbs" path="res://images/score_back2.png" id="6_20xw8"]
 [ext_resource type="Texture2D" uid="uid://c2lr6ax42xlyi" path="res://images/score_back3.png" id="7_du778"]
 [ext_resource type="Texture2D" uid="uid://dtmldq740vbvp" path="res://images/score_back4.png" id="8_f5kbb"]
+[ext_resource type="VideoStream" uid="uid://bjsvn43cnetf2" path="res://videos/slc_background.ogv" id="9_f5kbb"]
+[ext_resource type="Script" uid="uid://g3kmaimwib65" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="10_n3kaw"]
 
 [node name="Base" type="Control"]
 layout_mode = 3
@@ -26,6 +28,19 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.00184107, 0.00184107, 0.00184107, 1)
+
+[node name="base_background" type="VideoStreamPlayer" parent="ColorRect"]
+layout_mode = 0
+offset_left = 570.0
+offset_top = -13.0
+offset_right = 2206.0
+offset_bottom = 1067.0
+scale = Vector2(0.6, 0.6)
+stream = ExtResource("9_f5kbb")
+autoplay = true
+loop = true
+script = ExtResource("10_n3kaw")
+metadata/_custom_type_script = "uid://g3kmaimwib65"
 
 [node name="player_image" type="Sprite2D" parent="ColorRect"]
 position = Vector2(-4, -4.00002)
@@ -58,7 +73,6 @@ variable_type = 4
 variable_name = "score"
 comma_separate = true
 min_digits = 2
-max_players = 1
 metadata/_custom_type_script = "uid://c2x7osnvtx3tj"
 
 [node name="player2_score_bg" type="Sprite2D" parent="ColorRect"]

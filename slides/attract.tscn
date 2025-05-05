@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://besn58jwvay61"]
+[gd_scene load_steps=8 format=3 uid="uid://besn58jwvay61"]
 
 [ext_resource type="Script" uid="uid://w7oydsnli71j" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_r1mnt"]
 [ext_resource type="Script" uid="uid://ckxccymjfayjo" path="res://addons/mpf-gmc/classes/mpf_carousel.gd" id="2_f161n"]
 [ext_resource type="Texture2D" uid="uid://bf1vgunvc47b1" path="res://images/mpf_logo.png" id="3_cq3lo"]
+[ext_resource type="VideoStream" uid="uid://bb1rhbjnlpsy" path="res://videos/knight_owl_pinball.ogv" id="3_nlvwg"]
 [ext_resource type="Texture2D" uid="uid://cgiojo41fqbh3" path="res://images/slc_punk_logo.jpg" id="3_twbla"]
+[ext_resource type="Script" uid="uid://g3kmaimwib65" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="4_hhnfk"]
 [ext_resource type="Script" uid="uid://c2x7osnvtx3tj" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_twbla"]
 
 [node name="Attract" type="Control"]
@@ -28,9 +30,24 @@ script = ExtResource("2_f161n")
 carousel_name = "attract"
 metadata/_custom_type_script = "uid://ckxccymjfayjo"
 
+[node name="knight_owl_pinball" type="VideoStreamPlayer" parent="MPFCarousel"]
+layout_mode = 0
+offset_left = -210.0
+offset_top = -234.0
+offset_right = 1710.0
+offset_bottom = 846.0
+stream = ExtResource("3_nlvwg")
+autoplay = true
+script = ExtResource("4_hhnfk")
+end_behavior = 1
+preview_in_editor = true
+metadata/_custom_type_script = "uid://g3kmaimwib65"
+
 [node name="last_scores_p1" type="Node2D" parent="MPFCarousel"]
+visible = false
 
 [node name="player1_score" type="Label" parent="MPFCarousel/last_scores_p1"]
+visible = false
 offset_left = -362.0
 offset_top = -103.0
 offset_right = 1177.0
@@ -47,8 +64,10 @@ min_digits = 2
 metadata/_custom_type_script = "uid://c2x7osnvtx3tj"
 
 [node name="last_scores_p4" type="Node2D" parent="MPFCarousel"]
+visible = false
 
 [node name="player4_score" type="Label" parent="MPFCarousel/last_scores_p4"]
+visible = false
 offset_left = 324.0
 offset_top = 158.0
 offset_right = 1863.0
@@ -65,8 +84,10 @@ min_digits = 2
 metadata/_custom_type_script = "uid://c2x7osnvtx3tj"
 
 [node name="last_scores_p3" type="Node2D" parent="MPFCarousel"]
+visible = false
 
 [node name="player3_score" type="Label" parent="MPFCarousel/last_scores_p3"]
+visible = false
 offset_left = -360.0
 offset_top = 163.0
 offset_right = 1179.0
@@ -83,8 +104,10 @@ min_digits = 2
 metadata/_custom_type_script = "uid://c2x7osnvtx3tj"
 
 [node name="last_scores_p2" type="Node2D" parent="MPFCarousel"]
+visible = false
 
 [node name="player2_score" type="Label" parent="MPFCarousel/last_scores_p2"]
+visible = false
 offset_left = 339.0
 offset_top = -115.0
 offset_right = 1878.0
@@ -100,7 +123,7 @@ comma_separate = true
 min_digits = 2
 metadata/_custom_type_script = "uid://c2x7osnvtx3tj"
 
-[node name="title" type="Sprite2D" parent="MPFCarousel"]
+[node name="slc_punk" type="Sprite2D" parent="MPFCarousel"]
 visible = false
 position = Vector2(803, 309)
 scale = Vector2(1.9303, 1.9303)
